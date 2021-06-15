@@ -1,0 +1,183 @@
+.menu,
+.submenu {
+  background-image: url(../../../../assets/picture/quiz_tlo.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  color: white;
+  font-family: "Do Hyeon", sans-serif;
+  &__letter {
+    font-size: 60px;
+    padding-left: 10px;
+  }
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    div {
+      margin: 20px 0;
+    }
+  }
+  &__header,
+  &__header-relative {
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    p:nth-child(1) {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      font-size: 40px;
+    }
+    p:not(:nth-child(1)){
+      cursor: pointer;
+    }
+  }
+  &__header-relative{
+    position: relative;
+    left: 5px;
+  }
+  &__arrow{
+    position: relative;
+    left: -5px;
+  }
+  &__subheader {
+    background: rgb(95, 43, 133);
+    background: radial-gradient(
+      circle,
+      rgba(95, 43, 133, 1) 0%,
+      rgba(45, 24, 67, 1) 100%
+    );
+    width: 38%;
+    height: 45px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p:nth-child(2){
+    border: 2px solid white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 170px;
+    }
+  }
+  &__categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    div {
+      margin: 10px 10px;
+    }
+    p {
+      margin: 5px;
+      font-size: 12px;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &__tech,
+  &__culture,
+  &__moto,
+  &__program,
+  &__history {
+    border: 2px solid #7b5cba;
+    border-radius: 5px;
+    width: 125px;
+    height: 125px;
+    background: rgb(95, 43, 133);
+    background: linear-gradient(
+      225deg,
+      rgba(95, 43, 133, 1) 0%,
+      rgba(45, 24, 67, 1) 100%
+    );
+    cursor: pointer;
+    div {
+      width: 80%;
+      height: 79%;
+      margin: auto;
+      border-bottom: 2px solid #bd6ea9;
+      display: flex;
+      align-items: center;
+    }
+    img {
+      margin: 15px 0;
+    }
+    p {
+      padding-left: 7px;
+    }
+  }
+  &__tech:hover,
+  &__culture:hover,
+  &__moto:hover,
+  &__program:hover,
+  &__history:hover{
+    background: rgb(121,43,133);
+    background: linear-gradient(36deg, rgba(121,43,133,1) 74%, rgba(45,24,67,1) 100%);
+  }
+  &__tech-hidden,
+  &__culture-hidden,
+  &__moto-hidden,
+  &__program-hidden,
+  &__history-hidden {
+    width: 125px;
+    height: 125px;
+    div {
+      width: 80%;
+      height: 79%;
+      margin: auto;
+      border-bottom: 2px solid #bd6ea9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+.submenu{
+  background-image: url(../../../../assets/picture/quiz_background-second.jpg);
+  &__question{
+    display: flex;
+    justify-content: center;
+    width: 48%;
+
+  }
+  &__answers{
+    width: 53%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+    div{
+      border: 2px solid #7b5cba;
+      width: 200px;
+      height: 50px;
+      margin: 20px 15px;
+      border-radius: 10px;
+      background: rgb(121,43,133);
+      background: linear-gradient(270deg, rgba(121,43,133,1) 0%, rgba(45,24,67,1) 100%);
+    }
+    div:hover{
+    background: rgb(121,43,133);
+    background: linear-gradient(90deg, rgba(121,43,133,1) 74%, rgba(45,24,67,1) 100%);
+    }
+    div p{
+      padding: 14px 0 0 10px;
+    }
+    div p span{
+      color: #bd6ea9;
+    }
+  }
+}

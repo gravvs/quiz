@@ -1,0 +1,42 @@
+@import './variables.scss';
+@import './normalize';
+@import './fonts.scss';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+img{
+  width: 40px;
+  height: 40px;
+}
+button{
+border: 2px solid #7b5cba;
+width: 200px;
+height: 50px;
+margin: 10px 15px;
+border-radius: 10px;
+background: linear-gradient(270deg, #792b85 0%, #2d1843 100%);
+color: white;
+position: relative;
+top: -90px;
+left: 225px;
+cursor: pointer;
+}
+button:hover{
+  background: linear-gradient(36deg, rgba(121,43,133,1) 74%, rgba(45,24,67,1) 100%);
+}
+.red{
+  color: red;
+}
+.green{
+  color: green;
+}
+.bgcolor{
+  background: linear-gradient(270deg, #792b85 0%, #2d1843 100%);
+}
