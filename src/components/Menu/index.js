@@ -21,22 +21,28 @@ const Menu = () => {
         </div>
         <div className="menu__categories">
           <div className="menu__tech">
+            <Link to='../technologia'>
             <div>
               <img src={quiz_tech} alt="quiz_tech"/>
             </div>
+            </Link>
             <p>TECHNOLOGIA</p>
           </div>
           <div className="menu__culture">
+            <Link to='../kultura'>
             <div>
               <img src={hand_brain} alt="brain"/>
             </div>
+            </Link>
             <p>KULTURA</p>
           </div>
           <div className="menu__moto">
+            <Link to='../motoryzacja'>
             <div>
               <img src={service} alt="car"/>
             </div>
             <p>MOTORYZACJA</p>
+            </Link>
           </div>
           <div className="menu__program">
             <Link to='../programowanie'>
@@ -47,9 +53,11 @@ const Menu = () => {
             </Link>
           </div>
           <div className="menu__history">
+            <Link to='../historia'>
             <div>
               <img src={historia} alt="book"/>
             </div>
+            </Link>
             <p>HISTORIA</p>
           </div>
         </div>
