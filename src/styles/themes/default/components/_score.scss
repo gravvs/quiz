@@ -1,0 +1,146 @@
+.score {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  color: white;
+  font-family: "Do Hyeon", sans-serif;
+  &__letter {
+    font-size: 60px;
+    padding-left: 10px;
+  }
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    div {
+      margin: 20px 0;
+    }
+  }
+  &__header {
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 5px;
+    font-size: 40px;
+    a p{
+      font-size: 20px;
+    }
+    p:nth-child(1) {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+    }
+    p:not(:nth-child(1)) {
+      cursor: pointer;
+    }
+  }
+  &__subheader {
+    width: 28%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -234px;
+    div:nth-child(1){
+
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+    height: 35px;
+align-items: center;
+    }
+    div:nth-child(2) {
+      width: 79px;
+      height: 70px;
+      border-radius: 50%;
+      border: 2px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: -3px;
+    }
+  }
+  &__arrow {
+    position: relative;
+    left: -5px;
+  }
+  &__categories {
+    width: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    top: -523px;
+left: 1420px;
+  }
+
+  &__tech,
+  &__culture,
+  &__moto,
+  &__program,
+  &__history {
+    border: 2px solid #7b5cba;
+    margin: 5px 0;
+    border-radius: 5px;
+    width: 115px;
+    height: 100px;
+    background: rgb(95, 43, 133);
+    background: linear-gradient(
+      225deg,
+      rgba(95, 43, 133, 1) 0%,
+      rgba(45, 24, 67, 1) 100%
+    );
+    cursor: pointer;
+    div {
+      width: 80%;
+      height: 79%;
+      margin: auto;
+      border-bottom: 2px solid #bd6ea9;
+      display: flex;
+      align-items: center;
+    }
+    img {
+      margin: 15px 0;
+      width: 30px;
+      height: 30px;
+    }
+    p {
+      padding: 5px 0 0 10px;
+      font-size: 13px;
+    }
+  }
+  &__tech:hover,
+  &__culture:hover,
+  &__moto:hover,
+  &__program:hover,
+  &__history:hover{
+    background: rgb(121,43,133);
+    background: linear-gradient(36deg, rgba(121,43,133,1) 74%, rgba(45,24,67,1) 100%);
+  }
+  &__program-hidden {
+    width: 125px;
+    height: 125px;
+    cursor: pointer;
+    div {
+      width: 80%;
+      height: 79%;
+      margin: auto;
+      border-bottom: 2px solid #bd6ea9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      margin: 15px 0;
+    }
+    p {
+      padding: 7px 0 0 7px;
+    }
+  }
+}
