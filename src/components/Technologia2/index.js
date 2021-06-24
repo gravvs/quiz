@@ -16,7 +16,7 @@ const Technologia2 = () => {
   const photo = quiz_tech;
   const sign = "TECHNOLOGIA";
   return(
-    <div>
+    <div className="technologia">
         <Generalquest
          API_URL={API_URL}
          background={background}

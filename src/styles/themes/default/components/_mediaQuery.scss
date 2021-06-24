@@ -1,0 +1,36 @@
+@media only screen and (max-width: 1600px){
+.score__categories{
+    left: 1000px;
+}
+}
+@media only screen and (max-width: 1100px){
+    .score__categories{
+        left: 800px;
+    }
+    .score__subheader{
+        width: 34%;
+        left: -135px;
+    }
+    }
+    @media only screen and (max-width: 850px){
+.score__categories{
+    top: 0;
+left: 0;
+width: 100%;
+justify-content: center;
+align-items: center;
+position: relative;
+top: 50px;
+left: 0;
+}
+.score__categories-categorie{
+flex-direction: row;
+div{
+    margin-left: 15px;
+}
+}
+.score__subheader{
+    left: -76px;
+    min-width: 200px;
+}
+    }

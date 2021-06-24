@@ -16,7 +16,7 @@ const Kultura2 = () => {
   const photo = hand_brain;
   const sign = "KULTURA";
   return(
-  <div>
+  <div className="kultura">
       <Generalquest
        API_URL={API_URL}
        background={background}

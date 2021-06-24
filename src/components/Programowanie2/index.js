@@ -16,7 +16,7 @@ const Programowanie2 = () => {
   const photo = web_programming;
   const sign = "PROGRAMOWANIE";
   return(
-    <div>
+    <div className="programowanie">
         <Generalquest
          API_URL={API_URL}
          background={background}
