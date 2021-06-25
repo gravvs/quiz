@@ -16,7 +16,7 @@ const Motoryzacja2 = () => {
   const photo = service;
   const sign = "MOTORYZACJA";
   return(
-    <div>
+    <div className="motoryzacja">
         <Generalquest
          API_URL={API_URL}
          background={background}

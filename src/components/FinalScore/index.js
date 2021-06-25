@@ -46,7 +46,10 @@ const categories5 = sign === "MOTORYZACJA" ? "display" : "none";
         </div>
       </div>
       <div className="score__categories">
+        <div className="score__categories-sign">
           <p>WYBIERZ INNĄ KATEGORIĘ:</p>
+          </div>
+          <div className="score__categories-categorie">
           <Link to='/technologia'>
         <div className={'score__tech' +" "+ color + " " + categories2}>
           <div>
@@ -82,6 +85,7 @@ const categories5 = sign === "MOTORYZACJA" ? "display" : "none";
           </div>
           <p>HISTORIA</p>
         </div></Link>
+        </div>
       </div>
     </div>
   );
