@@ -25,24 +25,25 @@
         border: 2px solid white;
         background: rgb(198,198,198);
         background: linear-gradient(270deg, rgba(198,198,198,1) 63%, rgba(109,109,109,1) 100%);
+        opacity: 1;
+        transition: opacity 0.7s;
       }
       &__color:hover{
-        background: rgb(198,198,198);
-        background: linear-gradient(90deg, rgba(198,198,198,1) 63%, rgba(109,109,109,1) 100%);
+        opacity: 0.7;
       }
       &__subheader {
         background: rgb(126,126,126);
         background: radial-gradient(circle, rgba(126,126,126,0.70) 69%, rgba(126,126,126,0.25) 100%);
       }
-  &__answers {
-      div{
-    border: 2px solid white;
-    background: rgb(198,198,198);
-    background: linear-gradient(225deg, rgba(198,198,198,1) 63%, rgba(109,109,109,1) 100%);
-  }
-  div:hover{
-    background: rgb(198,198,198);
-    background: linear-gradient(45deg, rgba(198,198,198,1) 63%, rgba(109,109,109,1) 100%);
-  }
+
+&__answers-button,
+&__answer-button{
+  background: rgb(198,198,198);
+  background: linear-gradient(225deg, rgba(198,198,198,1) 63%, rgba(109,109,109,1) 100%);
+  opacity: 1;
+  transition: opacity 0.7s;
+}
+&__answers-button:hover{
+  opacity: 0.7;
 }
 }

@@ -9,7 +9,7 @@
   font-family: "Do Hyeon", sans-serif;
   &__letter {
     font-size: 60px;
-    padding-left: 10px;
+    padding: 20px 0 0 20px;
   }
   &__feature {
     display: flex;
@@ -35,6 +35,11 @@
     p:not(:nth-child(1)){
       cursor: pointer;
     }
+  }
+  &__header img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
   }
   &__header-relative{
     position: relative;
@@ -90,12 +95,13 @@
   &__moto,
   &__program,
   &__history {
+    transition: background-color 0.7s;
     border: 2px solid #7b5cba;
     border-radius: 5px;
     width: 125px;
     height: 125px;
-    background: rgb(95, 43, 133);
-    background: linear-gradient(
+    background-color: rgb(95, 43, 133);
+    background-color: linear-gradient(
       225deg,
       rgba(95, 43, 133, 1) 0%,
       rgba(45, 24, 67, 1) 100%
@@ -121,8 +127,8 @@
   &__moto:hover,
   &__program:hover,
   &__history:hover{
-    background: rgb(121,43,133);
-    background: linear-gradient(36deg, rgba(121,43,133,1) 74%, rgba(45,24,67,1) 100%);
+    background-color: rgb(121,43,133);
+    background-color: linear-gradient(36deg, rgba(121,43,133,1) 74%, rgba(45,24,67,1) 100%);
   }
 }
 
@@ -138,6 +144,9 @@
   position: fixed;
   color: white;
   font-family: "Do Hyeon", sans-serif;
+  &__color{
+    transition: background-color 0.7s;
+  }
   &__letter {
     font-size: 60px;
     padding-left: 10px;
@@ -165,6 +174,10 @@
       p:not(:nth-child(1)){
         cursor: pointer;
       }
+      a img{
+        width: 20px;
+        height: 20px;
+      }
     }
     &__header-relative{
       position: relative;
@@ -179,6 +192,7 @@
     }
     &__subheader {
       width: 38%;
+      min-width: 288px;
       height: 45px;
       padding: 15px 0;
       display: flex;
@@ -193,7 +207,7 @@
       justify-content: center;
       align-items: center;
       position: relative;
-      left: 170px;
+      left: 12%;
       }
     }
     &__categories {
@@ -233,19 +247,20 @@
   }
 }
 &__answers {
-    width: 38%;
+    width: 460px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    div{
+}
+&__answers-button,
+&__answer-button{
+  transition: background-color 0.7s linear;
   width: 200px;
   height: 60px;
-  margin: 10px 15px;
   padding-left: 10px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   cursor: pointer;
-}
 }
 }

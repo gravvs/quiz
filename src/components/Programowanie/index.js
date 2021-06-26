@@ -1,6 +1,8 @@
 import web_programming from "../../assets/picture/web_programming.svg";
 import button_strzałka from "../../assets/picture/button_strzałka.svg";
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import cofnij_x from '../../assets/picture/cofnij_x.svg';
+import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
 const Programowanie = () => {
   return (
@@ -11,8 +13,8 @@ const Programowanie = () => {
       <div className="programowanie__feature">
         <div className="programowanie__header-relative">
           <p>QUIZ</p>
-          <Link to='/'><p className="programowanie__arrow">&lt;</p></Link>
-          <Link to='/'><p>&Chi;</p></Link>
+          <Link to='/'><img src={cofnij_x} className="programowanie__arrow" alt="cofnij"/></Link>
+          <Link to='/'><img src={zamknij_x} alt="zamknij"/></Link>
         </div>
         <div className="programowanie__subheader">
           <p>WYBRANA KATEGORIA:</p>

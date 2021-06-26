@@ -1,16 +1,15 @@
-@media only screen and (max-width: 1600px){
-.score__categories{
-    left: 1000px;
+@media only screen and (max-width: 1815px){
 }
+@media only screen and (max-width: 1300px){
+    .technologia,
+.kultura,
+.motoryzacja,
+.programowanie,
+.historia{
+  &__button2{
+left: 41%;
+  }
 }
-@media only screen and (max-width: 1100px){
-    .score__categories{
-        left: 800px;
-    }
-    .score__subheader{
-        width: 34%;
-        left: -135px;
-    }
     }
     @media only screen and (max-width: 850px){
 .score__categories{
@@ -20,8 +19,6 @@ width: 100%;
 justify-content: center;
 align-items: center;
 position: relative;
-top: 50px;
-left: 0;
 }
 .score__categories-categorie{
 flex-direction: row;
@@ -29,8 +26,40 @@ div{
     margin-left: 15px;
 }
 }
-.score__subheader{
-    left: -76px;
-    min-width: 200px;
-}
+    }
+
+    @media only screen and (max-width: 650px){
+        .technologia,
+        .kultura,
+        .motoryzacja,
+        .programowanie,
+        .historia{
+          &__button2{
+              top: 69%;
+        left: 34%;
+          }
+        }
+        .score__categories-categorie{
+            width: 100%;
+justify-content: center;
+flex-wrap: wrap;
+        }
+    }
+
+    @media only screen and (max-width: 480px){
+        .technologia,
+        .kultura,
+        .motoryzacja,
+        .programowanie,
+        .historia{
+            &__answers{
+                width: 100%;
+                flex-direction: column;
+            }
+            &__button2{
+                top: 79%;
+                width: 80%;
+                left: 10%;
+            }
+        }
     }

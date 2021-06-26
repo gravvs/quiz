@@ -9,6 +9,8 @@ const Kultura2 = () => {
   const background3 = "kultura__button2";
   const background4 = "kultura__button3";
   const background5 = "kultura__button";
+  const answer_button = "kultura__answer-button"
+  const answers_button = "kultura__answers-button";
   const color = "kultura__color";
   const categories="kultura__dragdrop";
   const categorie="kultura__normal";
@@ -24,6 +26,8 @@ const Kultura2 = () => {
        background3={background3}
        background4={background4}
        background5={background5}
+       answer_button={answer_button}
+       answers_button={answers_button}
        bg_score={bg_score}
        color={color}
        categories={categories}

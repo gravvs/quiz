@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Route, Link } from "react-router-dom";
 import verification from '../../assets/picture/verification.svg';
+import cofnij_x from '../../assets/picture/cofnij_x.svg';
+import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
 const Programquestion = ({
   showAnswer,
@@ -11,6 +13,7 @@ const Programquestion = ({
   background,
   background2,
   background3,
+  answers_button,
   color,
   data: { question, correct_answer, answers },
 }) => {
@@ -23,10 +26,10 @@ const Programquestion = ({
         <div className="normalquestion__header-relative">
           <p>QUIZ</p>
           <Link to="/">
-            <p className="normalquestion__arrow">&lt;</p>
+            <img src={cofnij_x} className="normalquestion__arrow" alt="cofnij"/>
           </Link>
           <Link to="/">
-            <p>&Chi;</p>
+            <img src={zamknij_x} alt="zamknij"/>
           </Link>
         </div>
         <div className={background}>
@@ -54,10 +57,10 @@ const Programquestion = ({
               <div
                 onClick={() => handleAnswer(answer)}
                 key={inx}
-                className={bgColor}
+                className={answers_button + " " + bgColor}
               >
                 <p dangerouslySetInnerHTML={{ __html: answer }} />
-                <img src={verification} className={visible}/>
+                <img src={verification} className={visible} alt="correct_answer"/>
               </div>
             );
           })}

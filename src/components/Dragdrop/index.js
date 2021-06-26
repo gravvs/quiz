@@ -3,6 +3,8 @@ import { BrowserRouter as Route, Link } from "react-router-dom";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import verification from '../../assets/picture/verification.svg';
 import uuid from "uuid/v4";
+import cofnij_x from '../../assets/picture/cofnij_x.svg';
+import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
 const Dragdrop = ({
   setshowAnswer,
@@ -14,7 +16,7 @@ const Dragdrop = ({
   categories,
   background,
   background2,
-  background3,
+  answer_button,
   background4,
   color,
   data: { question, correct_answer, answers },
@@ -59,7 +61,6 @@ const Dragdrop = ({
           return
         }
       }
-        
       setColumns({
         ...columns,
         [source.droppableId]: {
@@ -87,10 +88,6 @@ const Dragdrop = ({
     }
   };
 
-  const resetAnswer =() =>{
-    setColumns(columnsFromBackend)
-    setshowAnswer(false)
-  }
 
   return (
     <div className={categories}>
@@ -101,10 +98,10 @@ const Dragdrop = ({
         <div className="normalquestion__header-relative">
           <p>QUIZ</p>
           <Link to="/">
-            <p className="normalquestion__arrow">&lt;</p>
+            <img src={cofnij_x} className="normalquestion__arrow" alt="cofnij"/>
           </Link>
           <Link to="/">
-            <p>&Chi;</p>
+            <img src={zamknij_x} alt="zamknij"/>
           </Link>
         </div>
         <div className={background}>
@@ -115,7 +112,6 @@ const Dragdrop = ({
         </div>
         <div className="normalquestion__question">
           <p dangerouslySetInnerHTML={{ __html: question }} />
-          <button onClick={resetAnswer} className={background3}>Reset</button>
         </div>
         <div className="normalquestion__dragndrop">
           <DragDropContext
@@ -157,10 +153,10 @@ const Dragdrop = ({
                                       {...provided.draggableProps}
                                       {...provided.dragHandleProps}
                                       ref={provided.innerRef}
-                                      className={background2 + " " + bgColor}
+                                      className={answer_button + " " + bgColor}
                                     >
                                       {item.content}
-                <img src={verification} className={visible}/>
+                <img src={verification} className={visible} alt="correct_answer"/>
                                     </div>
                                   );
                                 }}
