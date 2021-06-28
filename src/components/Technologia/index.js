@@ -1,6 +1,8 @@
 import quiz_tech from "../../assets/picture/quiz_tech.svg";
 import button_strzałka from "../../assets/picture/button_strzałka.svg";
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import cofnij_x from '../../assets/picture/cofnij_x.svg';
+import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
 const Technologia = () => {
   return (
@@ -11,8 +13,8 @@ const Technologia = () => {
       <div className="technologia__feature">
         <div className="technologia__header-relative">
           <p>QUIZ</p>
-          <Link to="/"><p className="technologia__arrow">&lt;</p></Link>
-          <Link to='/'><p>&Chi;</p></Link>
+          <Link to="/"><img src={cofnij_x} className="technologia__arrow" alt="cofnij"/></Link>
+          <Link to='/'><img src={zamknij_x} alt="zamknij"/></Link>
         </div>
         <div className="technologia__subheader">
           <p>WYBRANA KATEGORIA:</p>

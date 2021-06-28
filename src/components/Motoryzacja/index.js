@@ -1,6 +1,8 @@
 import service from "../../assets/picture/service.svg";
 import button_strzałka from "../../assets/picture/button_strzałka.svg";
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import cofnij_x from '../../assets/picture/cofnij_x.svg';
+import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
 const Motoryzacja = () => {
   return (
@@ -11,8 +13,8 @@ const Motoryzacja = () => {
       <div className="motoryzacja__feature">
         <div className="motoryzacja__header-relative">
           <p>QUIZ</p>
-          <Link to='/'><p className="motoryzacja__arrow">&lt;</p></Link>
-          <Link to='/'><p>&Chi;</p></Link>
+          <Link to='/'><img src={cofnij_x} className="motoryzacja__arrow" alt="cofnij"/></Link>
+          <Link to='/'><img src={zamknij_x} alt="zamknij"/></Link>
         </div>
         <div className="motoryzacja__subheader">
           <p>WYBRANA KATEGORIA:</p>

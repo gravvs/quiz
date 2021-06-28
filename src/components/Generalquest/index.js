@@ -5,7 +5,7 @@ import Programquestion from "../Programquestion";
 import Loader from "react-loader-spinner";
 
 
-const Generalquest = ({API_URL, background, background2,background3,background4,background5,color,categorie,categories,bg_score,photo,sign}) => {
+const Generalquest = ({API_URL, background, background2,background3,background4,background5,color,categorie,categories,bg_score,photo,sign,answer_button,answers_button}) => {
 
   const [questions, setquestions] = useState([]);
   const [currentIndex, setcurrentIndex] = useState(0);
@@ -72,7 +72,7 @@ const Generalquest = ({API_URL, background, background2,background3,background4,
           categories={categories}
           background={background}
           background2={background2}
-          background3={background3}
+          answer_button={answer_button}
           background4={background4}
           color={color}
         />
@@ -86,6 +86,7 @@ const Generalquest = ({API_URL, background, background2,background3,background4,
       background={background}
       background2={background2}
       background3={background3}
+      answers_button={answers_button}
       color={color}
       />
       ))}
@@ -95,8 +96,8 @@ const Generalquest = ({API_URL, background, background2,background3,background4,
     <Loader
     type="BallTriangle"
     color="#00BFFF"
-    height={900}
-    width={900}
+    height={450}
+    width={450}
     timeout={3000} />
     </div>
   );

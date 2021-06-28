@@ -1,6 +1,8 @@
 import history from "../../assets/picture/history.svg";
 import button_strzałka from "../../assets/picture/button_strzałka.svg";
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import cofnij_x from '../../assets/picture/cofnij_x.svg';
+import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
 const Historia = () => {
   return (
@@ -11,8 +13,8 @@ const Historia = () => {
       <div className="historia__feature">
         <div className="historia__header-relative">
           <p>QUIZ</p>
-          <Link to='/'><p className="historia__arrow">&lt;</p></Link>
-          <Link to='/'><p>&Chi;</p></Link>
+          <Link to='/'><img src={cofnij_x} className="historia__arrow" alt="cofnij"/></Link>
+          <Link to='/'><img src={zamknij_x} alt="zamknij"/></Link>
         </div>
         <div className="historia__subheader">
           <p>WYBRANA KATEGORIA:</p>

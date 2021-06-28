@@ -9,6 +9,8 @@ const Technologia2 = () => {
   const background3 = "technologia__button2";
   const background4 = "technologia__button3";
   const background5 = "technologia__button";
+  const answer_button = "technologia__answer-button";
+  const answers_button = "technologia__answers-button";
   const color = "technologia__color";
   const categories="technologia__dragdrop";
   const categorie="technologia__normal";
@@ -24,6 +26,8 @@ const Technologia2 = () => {
          background3={background3}
          background4={background4}
          background5={background5}
+         answer_button={answer_button}
+         answers_button={answers_button}
          bg_score={bg_score}
          color={color}
          categories={categories}

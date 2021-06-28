@@ -9,6 +9,8 @@ const Motoryzacja2 = () => {
   const background3 = "motoryzacja__button2";
   const background4 = "motoryzacja__button3";
   const background5 = "motoryzacja__button";
+  const answer_button = "motoryzacja__answer-button"
+  const answers_button = "motoryzacja__answers-button";
   const color = "motoryzacja__color";
   const categories="motoryzacja__dragdrop";
   const categorie="motoryzacja__normal";
@@ -24,6 +26,8 @@ const Motoryzacja2 = () => {
          background3={background3}
          background4={background4}
          background5={background5}
+         answer_button={answer_button}
+         answers_button={answers_button}
          bg_score={bg_score}
          color={color}
          categories={categories}

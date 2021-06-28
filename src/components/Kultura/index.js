@@ -1,6 +1,8 @@
 import shakespeare from "../../assets/picture/shakespeare.svg";
 import button_strzałka from "../../assets/picture/button_strzałka.svg";
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import cofnij_x from '../../assets/picture/cofnij_x.svg';
+import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
 const Kultura = () => {
   return (
@@ -11,8 +13,8 @@ const Kultura = () => {
       <div className="kultura__feature">
         <div className="kultura__header-relative">
           <p>QUIZ</p>
-          <Link to='/'><p className="kultura__arrow">&lt;</p></Link>
-          <Link to='/'><p>&Chi;</p></Link>
+          <Link to='/'><img src={cofnij_x} className="kultura__arrow" alt="cofnij"/></Link>
+          <Link to='/'><img src={zamknij_x} alt="zamknij"/></Link>
         </div>
         <div className="kultura__subheader">
           <p>WYBRANA KATEGORIA:</p>

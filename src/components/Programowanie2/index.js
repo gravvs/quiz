@@ -9,6 +9,8 @@ const Programowanie2 = () => {
   const background3 = "programowanie__button2";
   const background4 = "programowanie__button3";
   const background5 = "programowanie__button";
+  const answer_button = "programowanie__answer-button"
+  const answers_button = "programowanie__answers-button";
   const color = "programowanie__color";
   const categories="programowanie__dragdrop";
   const categorie="programowanie__normal";
@@ -24,6 +26,8 @@ const Programowanie2 = () => {
          background3={background3}
          background4={background4}
          background5={background5}
+         answer_button={answer_button}
+         answers_button={answers_button}
          bg_score={bg_score}
          color={color}
          categories={categories}

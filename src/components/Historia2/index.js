@@ -9,6 +9,8 @@ const Historia2 = () => {
     const background3 = "historia__button2";
     const background4 = "historia__button3";
     const background5 = "historia__button";
+    const answer_button = "historia__answer-button"
+    const answers_button = "historia__answers-button";
     const color = "historia__color";
     const categories="historia__dragdrop";
     const categorie="historia__normal";
@@ -24,6 +26,8 @@ const Historia2 = () => {
              background3={background3}
              background4={background4}
              background5={background5}
+             answer_button={answer_button}
+             answers_button={answers_button}
              bg_score={bg_score}
              color={color}
              categories={categories}

@@ -5,6 +5,8 @@ import hand_brain from "../../assets/picture/shakespeare.svg";
 import service from "../../assets/picture/service.svg";
 import historia from "../../assets/picture/history.svg";
 import {BrowserRouter as Router, Link} from 'react-router-dom';
+import cofnij_x from '../../assets/picture/cofnij_x.svg';
+import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
 
 const FinalScore = ({score, handleRepeat,background,background5, color,bg_score,photo,sign}) => {
@@ -24,10 +26,10 @@ const categories5 = sign === "MOTORYZACJA" ? "display" : "none";
         <div className="score__header">
           <p>QUIZ</p>
             <Link to='/'>
-          <p className="score__arrow">&lt;</p>
+          <img src={cofnij_x} className="score__arrow" alt="cofnij"/>
           </Link>
             <Link to='/'>
-          <p>&Chi;</p>
+          <img src={zamknij_x} alt="zamknij"/>
           </Link>
         </div>
         <div className="score__program-hidden">

@@ -27,8 +27,9 @@
     position: relative;
     left: 5px;
     font-size: 40px;
-    a p{
-      font-size: 20px;
+    a img{
+      width: 20px;
+      height: 20px;
     }
     p:nth-child(1) {
       display: flex;
@@ -41,10 +42,12 @@
   }
   &__subheader {
     width: 28%;
+    min-width: 358px;
     display: flex;
     align-items: center;
     position: relative;
-    left: -234px;
+    top: 0;
+    left: -12%;
     div:nth-child(1){
 
     width: 90%;
@@ -74,9 +77,9 @@ align-items: center;
     width: 6%;
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: -510px;
-left: 1420px;
+    position: absolute;
+    top: 18%;
+    left: 74%;
   }
   &__categories-categorie{
     display: flex;
@@ -93,12 +96,6 @@ left: 1420px;
     border-radius: 5px;
     width: 115px;
     height: 100px;
-    background: rgb(95, 43, 133);
-    background: linear-gradient(
-      225deg,
-      rgba(95, 43, 133, 1) 0%,
-      rgba(45, 24, 67, 1) 100%
-    );
     cursor: pointer;
     div {
       width: 80%;
@@ -117,14 +114,6 @@ left: 1420px;
       padding: 5px 0 0 10px;
       font-size: 13px;
     }
-  }
-  &__tech:hover,
-  &__culture:hover,
-  &__moto:hover,
-  &__program:hover,
-  &__history:hover{
-    background: rgb(121,43,133);
-    background: linear-gradient(36deg, rgba(121,43,133,1) 74%, rgba(45,24,67,1) 100%);
   }
   &__program-hidden {
     width: 125px;

@@ -4,6 +4,7 @@ import service from "../../assets/picture/service.svg";
 import web_programming from "../../assets/picture/web_programming.svg";
 import historia from "../../assets/picture/history.svg";
 import {BrowserRouter as Router, Link} from 'react-router-dom';
+import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
 const Menu = () => {
   return (
@@ -14,7 +15,7 @@ const Menu = () => {
       <div className="menu__feature">
         <div className="menu__header">
           <p>QUIZ</p>
-          <p>&Chi;</p>
+          <img src={zamknij_x} alt="zamknij"/>
         </div>
         <div className="menu__subheader">
           <p>10 PYTAŃ &#47; 5 KATEGORII</p>
