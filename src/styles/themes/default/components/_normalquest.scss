@@ -7,7 +7,7 @@
   color: white;
   font-family: "Do Hyeon", sans-serif;
   &__letter {
-    font-size: 60px;
+    font-size: pxToRem(60);
     padding-left: 10px;
   }
   &__feature {
@@ -25,7 +25,7 @@
     width: 54%;
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: pxToRem(40);
     p:nth-child(1) {
       display: flex;
       justify-content: center;
@@ -128,6 +128,7 @@
           height: 100%;
           border: none;
           margin: 0;
+          min-width: 150px;
         }
       }
     }
@@ -135,6 +136,7 @@
       width: 100%;
         flex-wrap: wrap;
         justify-content: flex-start;
+        margin: auto;
       div{
         div{
           width: 150px;

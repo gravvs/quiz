@@ -3,7 +3,7 @@ import hand_brain from "../../assets/picture/shakespeare.svg";
 import service from "../../assets/picture/service.svg";
 import web_programming from "../../assets/picture/web_programming.svg";
 import historia from "../../assets/picture/history.svg";
-import {BrowserRouter as Router, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
 const Menu = () => {
@@ -22,6 +22,7 @@ const Menu = () => {
         </div>
         <div className="menu__categories">
           <div className="menu__tech">
+          <div className="menu__tech-bg">
             <Link to='../technologia'>
             <div>
               <img src={quiz_tech} alt="quiz_tech"/>
@@ -29,7 +30,9 @@ const Menu = () => {
             </Link>
             <p>TECHNOLOGIA</p>
           </div>
+          </div>
           <div className="menu__culture">
+          <div className="menu__culture-bg">
             <Link to='../kultura'>
             <div>
               <img src={hand_brain} alt="brain"/>
@@ -37,7 +40,9 @@ const Menu = () => {
             </Link>
             <p>KULTURA</p>
           </div>
+          </div>
           <div className="menu__moto">
+          <div className="menu__moto-bg">
             <Link to='../motoryzacja'>
             <div>
               <img src={service} alt="car"/>
@@ -45,7 +50,9 @@ const Menu = () => {
             <p>MOTORYZACJA</p>
             </Link>
           </div>
+          </div>
           <div className="menu__program">
+          <div className="menu__program-bg">
             <Link to='../programowanie'>
             <div>
               <img src={web_programming} alt="computer_icon"/>
@@ -53,13 +60,16 @@ const Menu = () => {
             <p>PROGRAMOWANIE</p>
             </Link>
           </div>
+          </div>
           <div className="menu__history">
+          <div className="menu__history-bg">
             <Link to='../historia'>
             <div>
               <img src={historia} alt="book"/>
             </div>
             </Link>
             <p>HISTORIA</p>
+          </div>
           </div>
         </div>
       </div>

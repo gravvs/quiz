@@ -4,7 +4,7 @@ import quiz_tech from "../../assets/picture/quiz_tech.svg";
 import hand_brain from "../../assets/picture/shakespeare.svg";
 import service from "../../assets/picture/service.svg";
 import historia from "../../assets/picture/history.svg";
-import {BrowserRouter as Router, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import cofnij_x from '../../assets/picture/cofnij_x.svg';
 import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
@@ -53,35 +53,35 @@ const categories5 = sign === "MOTORYZACJA" ? "display" : "none";
           </div>
           <div className="score__categories-categorie">
           <Link to='/technologia'>
-        <div className={'score__tech' +" "+ color + " " + categories2}>
+        <div className={`score__tech ${color} ${categories2}`}>
           <div>
             <img src={quiz_tech} alt="quiz_tech" />
           </div>
           <p>TECHNOLOGIA</p>
         </div></Link>
         <Link to='/kultura'>
-        <div className={"score__culture" +" "+ color + " " + categories4}>
+        <div className={`score__culture ${color} ${categories4}`}>
           <div>
             <img src={hand_brain} alt="brain" />
           </div>
           <p>KULTURA</p>
         </div></Link>
         <Link to='/motoryzacja'>
-        <div className={"score__moto"+" "+ color + " " + categories5}>
+        <div className={`score__moto ${color} ${categories5}`}>
           <div>
             <img src={service} alt="car" />
           </div>
           <p>MOTORYZACJA</p>
         </div></Link>
         <Link to='/programowanie'>
-        <div className={"score__program" +" "+ color + " " + categories1}>
+        <div className={`score__program ${color} ${categories1}`}>
           <div>
             <img src={web_programming} alt="computer" />
           </div>
           <p>PROGRAMOWANIE</p>
         </div></Link>
         <Link to='/historia'>
-        <div className={"score__history" +" "+ color + " " + categories3}>
+        <div className={`score__history ${color} ${categories3}`}>
           <div>
             <img src={historia} alt="book" />
           </div>

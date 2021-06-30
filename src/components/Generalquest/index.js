@@ -24,7 +24,7 @@ const Generalquest = ({API_URL, background, background2,background3,background4,
         }));
         setquestions(questions);
       });
-  }, []);
+  }, [API_URL]);
 
   const handleAnswer = (answer) => {
     if (!showAnswer) {
