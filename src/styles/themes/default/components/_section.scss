@@ -8,7 +8,7 @@
   color: white;
   font-family: "Do Hyeon", sans-serif;
   &__letter {
-    font-size: 60px;
+    font-size: pxToRem(60);
     padding: 20px 0 0 20px;
   }
   &__feature {
@@ -17,9 +17,9 @@
     justify-content: center;
     align-items: center;
     height: 60%;
-    div {
-      margin: 20px 0;
-    }
+  }
+  &__header{
+    margin: 15px;
   }
   &__header,
   &__header-relative {
@@ -30,7 +30,7 @@
       display: flex;
       justify-content: center;
       flex: 1;
-      font-size: 40px;
+      font-size: pxToRem(40);
     }
     p:not(:nth-child(1)){
       cursor: pointer;
@@ -50,6 +50,7 @@
     left: -5px;
   }
   &__subheader {
+    margin: 15px;
     background: rgb(95, 43, 133);
     background: radial-gradient(
       circle,
@@ -78,24 +79,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    div {
-      margin: 10px 10px;
-    }
     p {
       margin: 5px;
-      font-size: 12px;
+      font-size: pxToRem(12);
     }
     img {
       width: 40px;
       height: 40px;
     }
   }
-  &__tech,
-  &__culture,
-  &__moto,
-  &__program,
-  &__history {
-    transition: background-color 0.7s;
+  &__tech-bg,
+  &__culture-bg,
+  &__moto-bg,
+  &__program-bg,
+  &__history-bg {
+    mix-blend-mode: screen;
     border: 2px solid #7b5cba;
     border-radius: 5px;
     width: 125px;
@@ -122,13 +120,29 @@
       padding-left: 7px;
     }
   }
-  &__tech:hover,
-  &__culture:hover,
-  &__moto:hover,
-  &__program:hover,
-  &__history:hover{
-    background-color: rgb(121,43,133);
-    background-color: linear-gradient(36deg, rgba(121,43,133,1) 74%, rgba(45,24,67,1) 100%);
+
+  &__tech,
+  &__culture,
+  &__moto,
+  &__program,
+  &__history{
+    margin: 15px 10px;
+  background: #000;
+  background: linear-gradient(135deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 125px;
+    height: 125px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: .5s all;
+    &:hover {
+      background-position: 100% 100%;
+      
+    }
   }
 }
 
@@ -148,7 +162,7 @@
     transition: background-color 0.7s;
   }
   &__letter {
-    font-size: 60px;
+    font-size: pxToRem(60);
     padding-left: 10px;
   }
   &__feature {
@@ -165,7 +179,7 @@
       width: 54%;
       display: flex;
       justify-content: center;
-        font-size: 40px;
+        font-size: pxToRem(40);
       p:nth-child(1) {
         display: flex;
         justify-content: center;
@@ -183,7 +197,7 @@
       position: relative;
       left: 5px;
       a p {
-        font-size: 20px;
+        font-size: pxToRem(20);
       }
     }
     &__arrow{
@@ -219,7 +233,7 @@
       }
       p {
         margin: 5px;
-        font-size: 12px;
+        font-size: pxToRem(12);
       }
       img {
         width: 40px;
@@ -243,7 +257,7 @@
     justify-content: center;
   }
   p {
-    font-size: 16px;
+    font-size: pxToRem(16);
   }
 }
 &__answers {

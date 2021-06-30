@@ -1,65 +1,81 @@
-@media only screen and (max-width: 1815px){
-}
-@media only screen and (max-width: 1300px){
-    .technologia,
-.kultura,
-.motoryzacja,
-.programowanie,
-.historia{
-  &__button2{
-left: 41%;
+@media only screen and (max-height: 960px) {
+  .technologia,
+  .kultura,
+  .motoryzacja,
+  .programowanie,
+  .historia {
+    &__button2 {
+      top: 76%;
+      min-height: 60px;
+    }
   }
 }
+@media only screen and (max-height: 850px) {
+    .technologia,
+    .kultura,
+    .motoryzacja,
+    .programowanie,
+    .historia {
+      &__button3 {
+        margin-top: 100px;
+      }
     }
-    @media only screen and (max-width: 850px){
-.score__categories{
+  }
+@media only screen and (max-height: 700px) {
+  .technologia,
+  .kultura,
+  .motoryzacja,
+  .programowanie,
+  .historia {
+    &__button2 {
+      margin-top: 100px;
+    }
+  }
+}
+@media only screen and (max-width: 850px) {
+  .score__categories {
     top: 0;
-left: 0;
-width: 100%;
-justify-content: center;
-align-items: center;
-position: relative;
-}
-.score__categories-categorie{
-flex-direction: row;
-div{
-    margin-left: 15px;
-}
-}
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .score__categories-categorie {
+    flex-direction: row;
+    div {
+      margin-left: 15px;
     }
+  }
+}
 
-    @media only screen and (max-width: 650px){
-        .technologia,
-        .kultura,
-        .motoryzacja,
-        .programowanie,
-        .historia{
-          &__button2{
-              top: 69%;
-        left: 34%;
-          }
-        }
-        .score__categories-categorie{
-            width: 100%;
-justify-content: center;
-flex-wrap: wrap;
-        }
-    }
+@media only screen and (max-width: 650px) {
+  .score__categories-categorie {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 
-    @media only screen and (max-width: 480px){
-        .technologia,
-        .kultura,
-        .motoryzacja,
-        .programowanie,
-        .historia{
-            &__answers{
-                width: 100%;
-                flex-direction: column;
-            }
-            &__button2{
-                top: 79%;
-                width: 80%;
-                left: 10%;
-            }
-        }
+@media only screen and (max-width: 480px) {
+  .technologia,
+  .kultura,
+  .motoryzacja,
+  .programowanie,
+  .historia {
+    &__answers {
+      width: 100%;
+      flex-direction: column;
     }
+    &__button2{
+      top: 85%;
+      width: 80%;
+      left: 10%;
+    }
+    &__button3{
+        top: 79%;
+        width: 80%;
+        left: 10%;
+    }
+  }
+}

@@ -7,7 +7,7 @@
   color: white;
   font-family: "Do Hyeon", sans-serif;
   &__letter {
-    font-size: 60px;
+    font-size: pxToRem(60);
     padding-left: 10px;
   }
   &__feature {
@@ -26,7 +26,7 @@
     justify-content: center;
     position: relative;
     left: 5px;
-    font-size: 40px;
+    font-size: pxToRem(40);
     a img{
       width: 20px;
       height: 20px;
@@ -112,7 +112,7 @@ align-items: center;
     }
     p {
       padding: 5px 0 0 10px;
-      font-size: 13px;
+      font-size: pxToRem(13);
     }
   }
   &__program-hidden {

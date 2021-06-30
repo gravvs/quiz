@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Route, Link } from "react-router-dom";
+import {Link} from 'react-router-dom';
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import verification from '../../assets/picture/verification.svg';
 import uuid from "uuid/v4";

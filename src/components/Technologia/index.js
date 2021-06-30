@@ -1,6 +1,6 @@
 import quiz_tech from "../../assets/picture/quiz_tech.svg";
 import button_strzałka from "../../assets/picture/button_strzałka.svg";
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import cofnij_x from '../../assets/picture/cofnij_x.svg';
 import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
