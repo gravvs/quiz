@@ -20,6 +20,9 @@
         margin-top: 100px;
       }
     }
+    .score__feature div{
+      margin: 8px 0;
+    }
   }
 @media only screen and (max-height: 700px) {
   .technologia,
@@ -28,7 +31,7 @@
   .programowanie,
   .historia {
     &__button2 {
-      margin-top: 100px;
+      margin-top: 70px;
     }
   }
 }
@@ -68,14 +71,25 @@
       flex-direction: column;
     }
     &__button2{
-      top: 85%;
+      top: 79%;
       width: 80%;
       left: 10%;
     }
     &__button3{
-        top: 79%;
-        width: 80%;
+        top: 39%;
+        width: 10%;
         left: 10%;
+        height: 290px;
+        margin-top: 100px;
     }
   }
+  .normalquestion__feature div {
+    margin: 7px 15px;
+  }
+  .normalquestion__dragndrop :nth-child(2){ 
+    width: 118%;
+    div div{
+    height: 60px;
+  }
+}
 }
