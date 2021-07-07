@@ -94,7 +94,7 @@ const Dragdrop = ({
       <div className="normalquestion__letter">
         <p>Q</p>
       </div>
-      <div className="normalquestion__feature">
+      <div className="dragandrop__feature">
         <div className="normalquestion__header-relative">
           <p>QUIZ</p>
           <Link to="/">
