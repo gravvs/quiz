@@ -1,0 +1,51 @@
+@function pxToRem($pxsize, $rembase: 16) {
+    @return ($pxsize / $rembase) + rem;
+}
+
+@mixin boxShadow($arg) {
+    -webkit-box-shadow: $arg;
+    box-shadow: $arg;
+}
+
+@mixin myFlex(){
+    $prefixes: (-webkit-box, -ms-flexbox, -webkit-flex, flex);
+    @each $prefix in $prefixes {
+        display: $prefix;
+    }
+}
+
+@mixin bottomRadius($arg){
+    border-bottom-left-radius: $arg;
+    border-bottom-right-radius: $arg;
+}
+
+@mixin blackTriangle($arg){
+  position: relative;
+  top: -28px;
+  $arg: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 46px solid $c-steel-gray;
+}
+
+$sizes: 1, 2, 3, 4, 5;
+@mixin createCol(){
+    @each $size in $sizes {
+        $index: index($sizes, $size);
+        .col-#{$index}{
+            width: $size;
+        }
+    }
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+@include createCol();

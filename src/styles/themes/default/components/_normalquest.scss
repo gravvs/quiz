@@ -1,0 +1,174 @@
+.normalquestion {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  color: white;
+  font-family: "Do Hyeon", sans-serif;
+  &__letter {
+    font-size: pxToRem(60);
+    padding-left: 10px;
+  }
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    div{
+      margin: 15px 15px;
+    }
+  }
+  &__header,
+  &__header-relative {
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    font-size: pxToRem(40);
+    p:nth-child(1) {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+    }
+    p:not(:nth-child(1)){
+      cursor: pointer;
+    }
+  }
+  &__header-relative{
+    position: relative;
+    left: 5px;
+    a img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__arrow{
+    position: relative;
+    left: -5px;
+  }
+  &__subheader {
+    background: rgb(95, 43, 133);
+    background: radial-gradient(
+      circle,
+      rgba(95, 43, 133, 1) 0%,
+      rgba(45, 24, 67, 1) 100%
+    );
+    width: 38%;
+    height: 45px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p:nth-child(2){
+    border: 2px solid white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 170px;
+    }
+  }
+  &__question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    margin-bottom: 0;
+    button{
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__answers{
+    width: 53%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+    div{
+      border: 2px solid #7b5cba;
+      width: 200px;
+      height: 50px;
+      margin: 10px 15px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    div:hover{
+    background: rgb(121,43,133);
+    background: linear-gradient(90deg, rgba(121,43,133,1) 74%, rgba(45,24,67,1) 100%);
+    }
+    div p{
+      padding: 14px 0 0 10px;
+    }
+  }
+  &__dragndrop{
+    width: 32%;
+    height: 355px;
+    min-width: 401px;
+    margin: auto;
+    div{
+      display: flex;
+    }
+    :nth-child(1){
+      justify-content: space-evenly;
+      align-items: center;
+      div{
+        width: 150px;
+        min-width: 150px;
+        height: 70px;
+        border: 2px solid #7b5cba;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+          width: 99%;
+          height: 100%;
+          border: none;
+          margin: 0;
+          min-width: 146px;
+        }
+      }
+    }
+    :nth-child(2){
+      width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: auto;
+      div{
+        div{
+          width: 150px;
+          height: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin: 10px 15px;
+          border-radius: 10px;
+          flex-wrap: nowrap;
+        }
+      }
+    }
+  }
+  &__button{
+    position: relative;
+    top: -50px;
+    left: 120px;
+  }
+}
+.dragandrop{
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    div{
+      margin: 15px 15px;
+    }
+  }
+}
