@@ -8,6 +8,16 @@ import {Link} from 'react-router-dom';
 import cofnij_x from '../../assets/picture/cofnij_x.svg';
 import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
+interface FinalScore {
+  score:Number;
+  handleRepeat:Function;
+  background:string;
+  background5:string; 
+  color:string;
+  bg_score:string;
+  photo:string;
+  sign:string;
+}
 
 const FinalScore = ({score, handleRepeat,background,background5, color,bg_score,photo,sign}) => {
 

@@ -6,6 +6,24 @@ import uuid from "uuid/v4";
 import cofnij_x from '../../assets/picture/cofnij_x.svg';
 import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
+interface Dragdrop {
+  setshowAnswer:boolean;
+  score:number;
+  setScore:number;
+  showAnswer:boolean;
+  currentIndex:number;
+  nextQuestion:Function;
+  categories:string;
+  background:string;
+  background2:string;
+  answer_button:string;
+  background4:string;
+  color:string;
+  question:string;
+  correct_answer:string;
+  answers:string;
+}
+
 const Dragdrop = ({
   setshowAnswer,
   score,

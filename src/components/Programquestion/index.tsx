@@ -4,6 +4,22 @@ import verification from '../../assets/picture/verification.svg';
 import cofnij_x from '../../assets/picture/cofnij_x.svg';
 import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
+interface Programquestion {
+  showAnswer:boolean;
+  currentIndex:number;
+  handleAnswer:Function;
+  nextQuestion:Function;
+  categorie:string;
+  background:string;
+  background2:string;
+  answers_button:string;
+  background3:string;
+  color:string;
+  question:string;
+  correct_answer:string;
+  answers:string;
+}
+
 const Programquestion = ({
   showAnswer,
   currentIndex,

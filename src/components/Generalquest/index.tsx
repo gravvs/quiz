@@ -4,6 +4,9 @@ import FinalScore from "../FinalScore";
 import Programquestion from "../Programquestion";
 import Loader from "react-loader-spinner";
 
+interface Generalquest{
+  API_URL, background, background2,background3,background4,background5,color,categorie,categories,bg_score,photo,sign,answer_button,answers_button:string;
+}
 
 const Generalquest = ({API_URL, background, background2,background3,background4,background5,color,categorie,categories,bg_score,photo,sign,answer_button,answers_button}) => {
 
@@ -68,7 +71,6 @@ const Generalquest = ({API_URL, background, background2,background3,background4,
           nextQuestion={nextQuestion}
           showAnswer={showAnswer}
           data={questions[currentIndex]}
-          handleAnswer={handleAnswer}
           categories={categories}
           background={background}
           background2={background2}
