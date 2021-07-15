@@ -15,10 +15,7 @@ interface iProgramquestion {
   answers_button:string;
   background3:string;
   color:string;
-  question:string;
-  correct_answer:string;
-  answers:string;
-  data: any;
+  data?: any;
 }
 
 const Programquestion = ({

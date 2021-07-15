@@ -10,7 +10,7 @@ import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
 interface iFinalScore {
   score:Number;
-  handleRepeat:any;
+  handleRepeat:Function;
   background:string;
   background5:string; 
   color:string;
@@ -52,7 +52,7 @@ const categories5 = sign === "MOTORYZACJA" ? "display" : "none";
             <div className={background}><p>TWÓJ WYNIK</p></div>
             <div className={color}><p>{score}/10</p></div>
         </div>
-        <div className={background5} onClick={handleRepeat}>
+        <div className={background5} onClick={() => handleRepeat()}>
           <p>POWTÓRZ QUIZ</p>
           <img src={button_strzałka} alt="button_strzalka" />
         </div>

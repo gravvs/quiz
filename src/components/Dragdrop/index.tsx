@@ -12,17 +12,14 @@ interface iDragdrop {
   setScore:any;
   showAnswer:boolean;
   currentIndex:number;
-  nextQuestion:any;
+  nextQuestion:Function;
   categories:string;
   background:string;
   background2:string;
   answer_button:string;
   background4:string;
   color:string;
-  question:string;
-  correct_answer:string;
-  answers:string;
-  data:any;
+  data?: any
 }
 
 const Dragdrop = ({
@@ -39,7 +36,7 @@ const Dragdrop = ({
   background4,
   color,
   data: { question, correct_answer, answers },
-}:iDragdrop) => {
+}: iDragdrop) => {
   const itemsFromBackend = answers.map((answer:any) => {
     return { id: uuid(), content: answer };
   });
@@ -193,7 +190,7 @@ const Dragdrop = ({
           </DragDropContext>
         </div>
         {showAnswer && (
-          <button onClick={nextQuestion} className={background4}>
+          <button onClick={() => nextQuestion()} className={background4}>
             Next question
           </button>
         )}
