@@ -4,11 +4,11 @@ import verification from '../../assets/picture/verification.svg';
 import cofnij_x from '../../assets/picture/cofnij_x.svg';
 import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
-interface Programquestion {
+interface iProgramquestion {
   showAnswer:boolean;
   currentIndex:number;
   handleAnswer:Function;
-  nextQuestion:Function;
+  nextQuestion:any;
   categorie:string;
   background:string;
   background2:string;
@@ -18,6 +18,7 @@ interface Programquestion {
   question:string;
   correct_answer:string;
   answers:string;
+  data: any;
 }
 
 const Programquestion = ({
@@ -32,7 +33,7 @@ const Programquestion = ({
   answers_button,
   color,
   data: { question, correct_answer, answers },
-}) => {
+}:iProgramquestion) => {
   return (
     <div className={categorie}>
       <div className="normalquestion__letter">
@@ -58,7 +59,7 @@ const Programquestion = ({
           <p dangerouslySetInnerHTML={{ __html: question }} />
         </div>
         <div className={background2}>
-          {answers.map((answer, inx) => {
+          {answers.map((answer:any, inx:any) => {
             const bgColor = showAnswer
               ? answer === correct_answer
                 ? "green"

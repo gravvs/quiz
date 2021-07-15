@@ -8,9 +8,9 @@ import {Link} from 'react-router-dom';
 import cofnij_x from '../../assets/picture/cofnij_x.svg';
 import zamknij_x from '../../assets/picture/zamknij_x.svg';
 
-interface FinalScore {
+interface iFinalScore {
   score:Number;
-  handleRepeat:Function;
+  handleRepeat:any;
   background:string;
   background5:string; 
   color:string;
@@ -19,7 +19,7 @@ interface FinalScore {
   sign:string;
 }
 
-const FinalScore = ({score, handleRepeat,background,background5, color,bg_score,photo,sign}) => {
+const FinalScore = ({score, handleRepeat,background,background5, color,bg_score,photo,sign}:iFinalScore) => {
 
 const categories1 = sign === "PROGRAMOWANIE" ? "display" : "none";
 const categories2 = sign === "TECHNOLOGIA" ? "display" : "none";

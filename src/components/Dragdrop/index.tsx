@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import {Link} from 'react-router-dom';
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import verification from '../../assets/picture/verification.svg';
-import uuid from "uuid/v4";
 import cofnij_x from '../../assets/picture/cofnij_x.svg';
 import zamknij_x from '../../assets/picture/zamknij_x.svg';
+const uuid = require("uuid/v4");
 
-interface Dragdrop {
-  setshowAnswer:boolean;
+interface iDragdrop {
+  setshowAnswer:any;
   score:number;
-  setScore:number;
+  setScore:any;
   showAnswer:boolean;
   currentIndex:number;
-  nextQuestion:Function;
+  nextQuestion:any;
   categories:string;
   background:string;
   background2:string;
@@ -22,6 +22,7 @@ interface Dragdrop {
   question:string;
   correct_answer:string;
   answers:string;
+  data:any;
 }
 
 const Dragdrop = ({
@@ -38,8 +39,8 @@ const Dragdrop = ({
   background4,
   color,
   data: { question, correct_answer, answers },
-}) => {
-  const itemsFromBackend = answers.map((answer) => {
+}:iDragdrop) => {
+  const itemsFromBackend = answers.map((answer:any) => {
     return { id: uuid(), content: answer };
   });
 
@@ -56,7 +57,7 @@ const Dragdrop = ({
 
   const [columns, setColumns] = useState(columnsFromBackend);
 
-  const onDragEnd = (result, columns, setColumns) => {
+  const onDragEnd = (result:any, columns:any, setColumns:any) => {
     if (!result.destination) return;
     const { source, destination } = result;
     if (source.droppableId !== destination.droppableId) {
@@ -147,7 +148,7 @@ const Dragdrop = ({
                           ref={provided.innerRef}
                           className={background2}
                         >
-                          {column.items.map((item, index) => {
+                          {column.items.map((item:any, index:number) => {
                             return (
                               <Draggable
                                 key={item.id}

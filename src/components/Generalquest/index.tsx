@@ -4,13 +4,26 @@ import FinalScore from "../FinalScore";
 import Programquestion from "../Programquestion";
 import Loader from "react-loader-spinner";
 
-interface Generalquest{
-  API_URL, background, background2,background3,background4,background5,color,categorie,categories,bg_score,photo,sign,answer_button,answers_button:string;
+interface iGeneralquest{
+  API_URL:any
+  background:string;
+   background2:string;
+   background3:string;
+   background4:string;
+   background5:string;
+   color:string;
+   categorie:string;
+   categories:string;
+   bg_score:string;
+   photo:string;
+   sign:string;
+   answer_button:string;
+   answers_button:string;
 }
 
-const Generalquest = ({API_URL, background, background2,background3,background4,background5,color,categorie,categories,bg_score,photo,sign,answer_button,answers_button}) => {
+const Generalquest = ({API_URL, background, background2,background3,background4,background5,color,categorie,categories,bg_score,photo,sign,answer_button,answers_button}:iGeneralquest) => {
 
-  const [questions, setquestions] = useState([]);
+  const [questions, setquestions] = useState<any[]>([]);
   const [currentIndex, setcurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [showAnswer, setshowAnswer] = useState(false);
@@ -18,7 +31,7 @@ const Generalquest = ({API_URL, background, background2,background3,background4,
     fetch(API_URL)
       .then((res) => res.json())
       .then((data) => {
-        const questions = data.results.map((question) => ({
+        const questions = data.results.map((question:any) => ({
           ...question,
           answers: [
             question.correct_answer,
@@ -29,7 +42,7 @@ const Generalquest = ({API_URL, background, background2,background3,background4,
       });
   }, [API_URL]);
 
-  const handleAnswer = (answer) => {
+  const handleAnswer = (answer:any) => {
     if (!showAnswer) {
       if (answer === questions[currentIndex].correct_answer) {
         setScore(score + 1);
